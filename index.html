@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jan Philip C. Pilapil | BSIT Student Portfolio</title>
+  <script>
+    // Use the saved theme, otherwise follow the device setting
+    (function () {
+      var theme = null;
+      try { theme = localStorage.getItem('theme'); } catch (e) {}
+      if (theme !== 'light' && theme !== 'dark') {
+        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">Portfolio</a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificates">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode" title="Switch to light mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Profile Section -->
+    <section class="hero" id="about">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="badge">BSIT Student &bull; Caloocan, Philippines</span>
+          <h1>Jan Philip C. Pilapil</h1>
+          
+          <p class="hero-intro">
+            I am an Information Technology student based in Caloocan who enjoys exploring software concepts and playing computer games. Outside of academics, I spend time analyzing financial and crypto trading charts, studying market technical patterns, and expanding my knowledge in systems design.
+          </p>
+
+          <div class="profile-meta">
+            <p><strong>General Location:</strong> Caloocan, Philippines</p>
+            <p><strong>Interests:</strong> Market Chart Analysis & Technical Trading, Software Engineering, Network Infrastructure, UI/Graphic Design</p>
+            <p><strong>Last Updated:</strong> 2026-09-20</p>
+
+            <p class="edu-heading">EDUCATION</p>
+
+            <div class="edu-item">
+              <p class="edu-school">Philippine Christian University</p>
+              <p><strong>Degree, course, or strand:</strong> Bachelor of Science in Information Technology (BSIT)</p>
+              <p><strong>Dates:</strong> 2026 &ndash; Present</p>
+            </div>
+
+            <div class="edu-item">
+              <p class="edu-school">Carlos P. Garcia High School</p>
+              <p><strong>Degree, course, or strand:</strong> Senior High School &ndash; TVL Track (Information and Communications Technology / ICT-Programming Strand)</p>
+              <p><strong>Dates:</strong> 2022 &ndash; 2024</p>
+            </div>
+
+            <div class="edu-item">
+              <p class="edu-school">Rizal Elementary School</p>
+              <p><strong>Degree, course, or strand:</strong> Primary Education</p>
+              <p><strong>Dates:</strong> 2010 &ndash; 2016</p>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#certificates" class="btn btn-secondary">Certifications</a>
+            <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <img src="ME.jpg" alt="Jan Philip C. Pilapil" class="profile-img" />
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="section-title">Featured Projects</h2>
+      
+
+      <div class="projects-grid">
+        <div class="cert-card game-card">
+          <div class="cert-img-wrapper game-thumb" data-game-src="casino_hub.html" data-game-title="Casino Arcade">
+            <img src="casino-preview.jpg" alt="Casino Arcade game preview" />
+            <span class="play-badge">&#9654; Click to play</span>
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">JavaScript &bull; Loops</span>
+            <h3 class="cert-title">Casino Arcade</h3>
+            <p class="project-desc">Six casino-style mini-games made with JavaScript to practice for, while, and do...while loops.</p>
+            <div class="tag-container">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Loops</span>
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certificates">
+      <h2 class="section-title">Certifications & Credentials</h2>
+      <div class="cert-grid">
+        
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="nc3 e-cert.jpg" alt="TESDA National Certificate III in Visual Graphic Design" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">TESDA (Republic of the Philippines)</span>
+            <h3 class="cert-title">National Certificate III in Visual Graphic Design</h3>
+            <p class="cert-date">Issued: May 20, 2024 &bull; Valid until: May 19, 2029</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="Tuklas e-cert.jpg" alt="Project Tuklas Python Programming Certificate" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">Project Tuklas Teknolohiya</span>
+            <h3 class="cert-title">Python Programming Workshop</h3>
+            <p class="cert-date">Completed: August 29, 2026 &bull; Credited: 3 Hours</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="e-cert Python.jpg" alt="Udemy Python Complete Course for Beginners" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">Udemy (Horizon Tech)</span>
+            <h3 class="cert-title">Python Complete Course For Beginners</h3>
+            <p class="cert-date">Completed: Nov. 19, 2024 &bull; 5.5 total hours</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="e-cert Cyber Security.jpg" alt="Udemy Cyber Security Anti-Virus Certificate" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">Udemy</span>
+            <h3 class="cert-title">Cyber Security: Anti-Virus</h3>
+            <p class="cert-date">Completed: Nov. 19, 2024 &bull; 1 total hour</p>
+          </div>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-img-wrapper">
+            <img src="e-cert Linux Beginner.jpg" alt="Udemy Linux Beginner Commands Certificate" />
+          </div>
+          <div class="cert-body">
+            <span class="cert-issuer">Udemy</span>
+            <h3 class="cert-title">Linux Beginner Commands</h3>
+            <p class="cert-date">Completed: Nov. 19, 2024 &bull; 37 total mins</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div id="certModal" class="modal">
+      <span class="modal-close">&times;</span>
+      <img class="modal-content" id="modalImage" alt="Certificate Preview" />
+      <iframe class="modal-game" id="modalGame" title="Game preview"></iframe>
+      <div id="modalCaption"></div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Public Contact Information</h2>
+      
+      <div class="contact-info-block">
+        <div class="contact-info-item">
+          <span class="contact-info-label">Professional Email:</span>
+          <a href="mailto:jan.pilapil.coi@pcu.edu.ph" class="contact-info-val">jan.pilapil.coi@pcu.edu.ph</a>
+        </div>
+        <div class="contact-info-item">
+          <span class="contact-info-label">Preferred Contact Method:</span>
+          <span class="contact-info-val">Email (Direct Response within 24–48 hours)</span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" required placeholder="Juan Dela Cruz" />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" required placeholder="name@example.com" />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" rows="4" required placeholder="Write your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentYear"></span> Jan Philip C. Pilapil. Built with HTML, CSS, and JS.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- Chatbase chatbot widget -->
+  <script>
+  (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="SaUGoxGJDr27r4oi2v3am";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+  </script>
+</body>
+</html>
